@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Grid Blog Layout</title>
+  <style>
+    /* Grid Layout */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+      grid-template-columns: 250px 1fr;
+      grid-template-rows: auto 1fr auto;
+      min-height: 100vh;
+    }
+
+    header {
+      grid-area: header;
+      background-color:#E4D6A7;
+      color: black;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    aside {
+      grid-area: sidebar;
+      background-color: #FAC8CD;
+      padding: 1rem;
+      position: relative;
+    }
+
+    aside nav {
+      position: sticky;
+      top: 1rem;
+    }
+
+    aside nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    aside nav li {
+      margin-bottom: 1rem;
+    }
+
+    aside nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: x-large;
+    }
+
+    main {
+      grid-area: main;
+      background-color:#1C110A;
+      padding: 1rem;
+      overflow-y: auto;
+      color: #f4f4f4;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    footer {
+      grid-area: footer;
+      background-color: #E4D6A7;
+      color: black;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      body {
+        grid-template-areas:
+          "header"
+          "main"
+          "sidebar"
+          "footer";
+        grid-template-columns: 1fr;
+      }
+
+      aside {
+        order: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Blog</h1>
+  </header>
+
+  <aside>
+    <nav>
+      <ul>
+        <li><a href="#">Tech News</a></li>
+        <li><a href="#">Tutorials</a></li>
+        <li><a href="#">Opinions</a></li>
+        <li><a href="#">Interviews</a></li>
+        <li><a href="#">Reviews</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main>
+    <section>
+      <h2>Section 1: Welcome</h2>
+      <p>Welcome to the space where technology meets insight. This blog is dedicated to sharing ideas, tutorials, and discussions around the latest in software development, tech news, and creative problem-solving. Whether you're a beginner or an experienced developer, you’ll find something valuable here.</p>
+    </section>
+    <section>
+      <h2>Section 2: Tech Trends</h2>
+      <p>From AI-powered assistants to quantum computing breakthroughs, 2025 is already proving to be a game-changing year for technology. Companies are investing more in automation, edge computing is gaining traction, and cybersecurity is evolving to tackle new threats. Staying updated with these trends is essential for tech professionals and enthusiasts alike.</p>
+    </section>
+    <section>
+      <h2>Section 3: Tips & Tricks</h2>
+      <p>Writing clean, maintainable code doesn’t have to be difficult. Use keyboard shortcuts, modular functions, and code snippets to work faster. Tools like GitHub Copilot and linters can also enhance your workflow. Most importantly, take regular breaks and keep learning — it's the key to consistent productivity.</p>
+    </section>
+    <section>
+      <h2>Section 4: Industry News</h2>
+      <p>Major tech giants are shifting toward sustainability and remote-first models. Startups are focusing more on ethical AI and data privacy. Meanwhile, the job market is expanding for roles like DevOps engineers, cloud architects, and cybersecurity analysts. It's an exciting time to be part of the tech industry.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Blog. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
