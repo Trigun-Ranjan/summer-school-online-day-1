@@ -1,56 +1,43 @@
-# 📝 Sticky Blog Layout with CSS Grid
+# 🌐 Sticky Blog Layout with CSS Grid
 
-## 🎯 Objective
-Design a responsive blog layout using **CSS Grid** and implement a **sticky sidebar** using `position: sticky`.
-
----
-
-## ✅ Features
-
-- **Grid Layout** using `grid-template-areas`:
-  - Header (full width)
-  - Sidebar (left)
-  - Main Content (right)
-  - Footer (full width)
-
-| Header               |      |
-| -------------------- | ---- |
-| Sidebar              | Main |
-| -------------------- |      |
-| Footer               |      |
-
-
-- **Sticky Sidebar**:
-  - Vertical list of 5 blog post titles or categories
-  - Sidebar stays fixed while scrolling main content
-
-- **Main Content**:
-  - 4–5 scrollable blog sections with `<h2>` and `<p>` tags
-
-- **Styling**:
-  - Unique background colors for each section
-  - Padding and spacing for clarity
-  - Responsive using `minmax()` and media queries
+This is my submission for **Summer School Online - Day 3 Assignment**.  
+It demonstrates a responsive **blog page layout** using **CSS Grid** and a **sticky sidebar navigation menu**.
 
 ---
 
-## 🛠️ Tech Used
+##  Features
+
+-  Layout built with **CSS Grid**  
+-  **Sticky sidebar** using `position: sticky`  
+-  Responsive design with media queries  
+-  5 navigation links in sidebar  
+-  5 blog content sections with headings and paragraphs  
+-  Clean UI with hover effects and custom colors  
+-  Footer included at the bottom
+
+---
+
+##  Technologies Used
 
 - HTML5  
-- CSS3 (Grid + Sticky Positioning)
+- CSS3  
+- CSS Grid  
+- Media Queries  
+- Sticky Positioning
 
 ---
 
-## 📁 Files
+##  Responsive Design
 
-- `index.html` — Layout Structure  
-- `style.css` — Styling and Responsive Grid  
-- `README.md` — Documentation
+The layout adjusts for smaller screens using `@media` queries —  
+on mobile, the sidebar stacks above the main content for better readability.
 
 ---
 
-## 🚀 Usage
+##  Folder Structure
+summer-school-online-day-3/
+├── index.html
+├── style.css
+└── README.md
 
-1. Clone or download the project folder  
-2. Open `index.html` in any web browser  
-3. Scroll the content — sticky sidebar will remain visible  
+---
